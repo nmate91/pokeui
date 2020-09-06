@@ -67,6 +67,7 @@ function PokemonTable(props: { onRowClick: (pokemon: { name: string; url: string
                         backgroundColor: '#01579b',
                         color: '#FFF',
                         borderBottom: '2px solid rgba(189, 189, 189, 0.5)',
+                        zIndex: 0,
                     },
                     showFirstLastPageButtons: true,
                     selection: false,

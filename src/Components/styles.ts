@@ -4,10 +4,10 @@ import Select from 'react-select';
 
 export const TablePaper = styled(Paper)`
     @media (min-width: 1625px) {
-        width: 50%;
+        width: 70%;
     }
     @media (max-width: 1625px) {
-        width: 30%;
+        width: 50%;
     }
     float: left;
     margin-bottom: 6px;
@@ -18,10 +18,10 @@ export const DropDown = styled(Select)`
     margin-top: 10px;
     margin-bottom: 30px;
     @media (min-width: 1625px) {
-        width: 50%;
+        width: 30%;
     }
     @media (max-width: 1625px) {
-        width: 30%;
+        width: 20%;
     }
 `;
 
