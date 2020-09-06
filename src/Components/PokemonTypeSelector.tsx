@@ -19,7 +19,7 @@ const mapStateToProps = (state: RootState) => ({
 });
 const mapDispatchToProps = { setType };
 
-function TypeSelect() {
+function PokemonTypeSelector() {
     const onChange = (selectedOption: ValueType<OptionType>) => {
         if (selectedOption) {
             const optionObject = selectedOption as OptionType;
@@ -87,4 +87,4 @@ function TypeSelect() {
     );
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(TypeSelect);
+export default connect(mapStateToProps, mapDispatchToProps)(PokemonTypeSelector);

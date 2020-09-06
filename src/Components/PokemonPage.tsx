@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import TypeSelect from './TypeSelect';
+import PokemonTypeSelector from './PokemonTypeSelector';
 import PokemonTable from './PokemonTable';
 import { catchPokemon } from '../redux/modules/Catcher';
 import { connect, useSelector } from 'react-redux';
@@ -43,7 +43,7 @@ function PokemonPage() {
 
     return (
         <React.Fragment>
-            <TypeSelect />
+            <PokemonTypeSelector />
             <PokemonTable onRowClick={onRowClick} />
             {pokemon && <PokemonDialog onCloseDialog={onCloseDialog} pokemon={pokemon} buttonText={buttonText} />}
         </React.Fragment>
