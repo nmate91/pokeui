@@ -1,4 +1,4 @@
-import { Paper, TextField, Typography } from '@material-ui/core';
+import { DialogContent, FormControl, Paper, Typography } from '@material-ui/core';
 import styled from 'styled-components';
 import Select from 'react-select';
 
@@ -11,6 +11,11 @@ export const TablePaper = styled(Paper)`
     }
     float: left;
     margin-bottom: 6px;
+`;
+
+export const CustomDialogContent = styled(DialogContent)`
+    width: 500px;
+    height: auto;
 `;
 
 export const DropDown = styled(Select)`
@@ -45,4 +50,17 @@ export const TableTitle = styled(Typography)`
     padding-top: 20px !important;
     padding-left: 5px !important;
     padding-bottom: 10px !important;
+`;
+
+export const LeftColumnFormControl = styled(FormControl)`
+    display: inline-block !important;
+    width: 39%;
+    margin-right: 10% !important;
+`;
+
+export const RightColumnFormControl = styled(FormControl)`
+    display: inline-block !important;
+    width: 39%;
+    margin-left: 10% !important;
+    margin-right: 1% !important;
 `;
